@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(-45deg, #141414 20%, #243b55 80%);
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculadora-main{
+    border: solid 2px #fff;
+    background-color: #141414;
+    border-radius: 1.5rem;
+    padding: 3.5rem;
+
+    
+}
