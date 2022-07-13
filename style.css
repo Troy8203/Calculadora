@@ -2,6 +2,8 @@
     margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 body {
     background: linear-gradient(-45deg, #141414 20%, #243b55 80%);
     height: 100vh;
@@ -9,13 +11,45 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .calculadora-main{
     border: solid 2px #fff;
-    background-color: #141414;
+    background-color: #5a5c68;
     border-radius: 1.5rem;
-    padding: 3.5rem;
+    padding: 1.5rem;
 
-    
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    gap: .5rem;
+}
+
+.screen{
+    grid-area: 1 / 1 / span 1/ span 4;
+    height: 50px;
+    background: #c1d798;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    /* background-color: rgba(255, 255, 255, .3); */
+    color: #c1d798;
+}
+
+.number {
+    background: #3d4049;
+}
+
+.simbol {
+    background: #bcc0c7;
+}
+
+.screen, .button {
+    border-radius: .5rem;
 }
